@@ -10,8 +10,8 @@ module.exports = {
 			jsx: true,
 		},
 	},
-	plugins: ['react-extra', 'jsx-a11y', 'import', 'flowtype'],
-	extends: ['airbnb', 'plugin:flowtype/recommended'],
+	plugins: ['react-extra', 'jsx-a11y', 'import'],
+	extends: ['airbnb', 'prettier', 'prettier/react'],
 	rules: {
 		indent: ['error', 2],
 		'no-tabs': 0,
@@ -101,6 +101,9 @@ module.exports = {
 						after: true,
 					},
 					finally: {
+						after: true,
+					},
+					default: {
 						after: true,
 					},
 				},
