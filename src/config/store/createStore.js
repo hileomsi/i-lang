@@ -1,15 +1,8 @@
-import configureMiddlewares from './middlewares'
-import { createStore, combineReducers, applyMiddleware } from 'redux'
-
-import { rootReducers, rootSagas } from 'modules'
-import createSagaMiddleware from 'redux-saga'
+import { init } from '@rematch/core'
+import models from 'models'
 
 export default () => {
-	const sagaMiddleware = createSagaMiddleware()
-	const reducers = combineReducers(rootReducers)
-	const store = createStore(reducers, applyMiddleware(sagaMiddleware))
+	const store = init({ models });
 
-	sagaMiddleware.run(rootSagas)
-
-	return store
+	return store;
 }
