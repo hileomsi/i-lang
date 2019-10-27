@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { pure } from 'recompose';
-import { Button as ButtonStyle } from './styles';
+import { Button as ButtonStyle } from './Button.styles';
 
 const Button = props => <ButtonStyle {...props} />;
 

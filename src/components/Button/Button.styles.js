@@ -11,7 +11,8 @@ export const Button = styled.button`
 	font-family: ${fonts.primary};
   color: ${colors.primary.p4};
   transition: color .4s, border-color .4s;
-  
+  box-sizing: border-box;
+
   :focus,:active,:hover{
     background-color: inherit;
     outline: inherit;

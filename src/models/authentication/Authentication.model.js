@@ -1,5 +1,5 @@
 import Immutable from 'seamless-immutable';
-import { authenticate } from './effects';
+import { authenticate } from './Authentication.effects';
 
 const defaultState = Immutable({
   logged: false,

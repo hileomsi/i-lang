@@ -1,3 +1,3 @@
-import authentication from './authentication';
+import authentication from './Authentication/Authentication.model';
 
 export default { authentication };
