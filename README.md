@@ -1,3 +1,11 @@
+# Ilang
+
+A nano english course for beginner learners.
+
+![](./resources/mockup/Mockup - 00.png)
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
